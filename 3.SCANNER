@@ -1,0 +1,23 @@
+3. scanner
+
+import java.util.Scanner;
+
+public class App {
+    public static void main(String[] args) throws Exception {
+        Scanner sc = new Scanner(System.in);
+
+
+        System.out.println("Enter your first number");
+        Integer first = sc.nextInt();
+
+        System.out.println("your sum is: " + first);
+
+
+        System.out.println("Enter your second number: ");
+        Integer second = sc.nextInt();
+
+        System.out.println("your second sum is: " + second);
+
+        System.out.println(first + second);
+    }
+}
