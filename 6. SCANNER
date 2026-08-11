@@ -1,0 +1,24 @@
+6. scanner
+
+    public static void main(String[] args) throws Exception {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter your name: ");
+        String name = sc.nextLine();
+
+        System.out.println("hello! " + name);
+
+
+        System.out.println("Enter your age: ");
+        Integer age = sc.nextInt();
+
+        System.out.println("you are " + age + "yeard old");
+
+        System.out.println("your grade is: ");
+        Double grade = sc.nextDouble();
+
+        System.out.println("your grade is: " + grade);
+
+
+    }
+}
