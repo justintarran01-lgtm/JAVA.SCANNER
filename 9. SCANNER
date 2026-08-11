@@ -1,0 +1,22 @@
+9. scanner
+
+import java.util.Scanner;
+
+public class App {
+    public static void main(String[] args) throws Exception {
+        Scanner sc = new Scanner(System.in);
+
+       System.out.println("Enter width: ");
+       Double width = sc.nextDouble();
+
+       System.out.println("Enter height: ");
+       Double height = sc.nextDouble();
+       
+       System.out.println("your area is: " + (width * height));
+
+       System.out.println("your perimeter t is: " + ( 2 * (height + width)));
+
+        
+
+    }
+}
