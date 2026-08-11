@@ -1,0 +1,28 @@
+8. scanner
+
+import java.util.Scanner;
+
+public class App {
+    public static void main(String[] args) throws Exception {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter name: ");
+        String name = sc.nextLine();
+
+        System.out.println("hello! " + name);
+
+        System.out.println("Enter age: ");
+        Integer age = sc.nextInt();
+
+        System.out.println("your age is " + age);
+
+        
+        System.out.println("in 5 years you will be " + (age + 5 ) + "year old");
+
+
+
+
+        
+
+    }
+}
