@@ -1,0 +1,26 @@
+7.scanner
+
+import java.util.Scanner;
+
+public class App {
+    public static void main(String[] args) throws Exception {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter the name of item");
+        String name = sc.nextLine();
+
+        System.out.println("item: " + name);
+
+        System.out.println("Enter price");
+        Double price = sc.nextDouble();
+
+        System.out.println("the price: " + price);
+
+        System.out.println("Enter quantity: ");
+        Integer quantity = sc.nextInt();
+
+        System.out.println("total: " + quantity * price );
+        
+
+    }
+}
