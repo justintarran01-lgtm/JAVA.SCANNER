@@ -1,0 +1,52 @@
+16. scanner/hard
+
+import java.util.Scanner;
+
+public class App {
+    public static void main(String[] args) throws Exception {
+        Scanner sc = new Scanner(System.in);
+
+    
+        System.out.println("Enter pin: ");
+        String pin = sc.nextLine();
+
+        if (pin.equals("1234")){
+            System.out.println("successfully login");
+
+
+            System.out.println("Enter balance");
+            Integer balance = sc.nextInt();
+
+            if (balance > 0){
+                System.out.println("continue");
+
+                System.out.println("Enter withdrawwal");
+                Integer withdraw = sc.nextInt();
+
+                if (withdraw <= balance){
+                    System.out.println("withdraw succesfully");
+                } else {
+                    System.out.println("Inufficient balance");
+                }
+
+                
+
+
+
+            } else {
+                System.out.println("invalid amount");
+            }
+
+
+
+        } else {
+            System.out.println("wront pin");
+        }
+
+
+
+
+
+
+    }
+}
