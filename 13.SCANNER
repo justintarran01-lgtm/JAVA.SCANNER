@@ -1,0 +1,27 @@
+13. scanner/hardest
+
+import java.util.Scanner;
+
+public class App {
+    public static void main(String[] args) throws Exception {
+        Scanner sc = new Scanner(System.in);
+
+    System.out.println("Item price: ");
+    Double price = sc.nextDouble();
+    
+
+   
+
+
+    if (price >= 1000){
+        System.out.println("Discount applied!: " + (price * 0.10));
+        Double discount = price * 0.10;
+        System.out.println("final price: " + (price - discount));
+    } else {
+        System.out.println("no discount: Final price " + price);
+    }
+
+        
+
+    }
+}
