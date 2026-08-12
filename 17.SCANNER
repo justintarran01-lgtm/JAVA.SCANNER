@@ -1,0 +1,49 @@
+17.SCANNER/HARD
+
+
+import java.util.Scanner;
+
+public class App {
+    public static void main(String[] args) throws Exception {
+        Scanner sc = new Scanner(System.in);
+
+    
+        System.out.println("Enter age: ");
+        Integer age = sc.nextInt();
+
+        sc.nextLine();
+
+
+        System.out.println("Are you students: ");
+        Boolean student = sc.nextBoolean();
+
+
+
+        if (age <= 12){
+            System.out.println("child ticket");
+        } else if (age >= 13 && age <= 17){
+            if (student){
+                System.out.println("teen student ticket");
+            } else {
+                System.out.println("teen ticket");
+            }
+        } else {
+
+        
+
+            if (student){
+                System.out.println("adult students ticket");
+            } else {
+                System.out.println("adult ticket");
+            }
+        }
+           
+        
+
+        
+
+        
+
+
+    }
+}    
