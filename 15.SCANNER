@@ -1,0 +1,44 @@
+15. scanner
+
+import java.util.Scanner;
+
+public class App {
+    public static void main(String[] args) throws Exception {
+        Scanner sc = new Scanner(System.in);
+
+    
+        System.out.println("Enter username");
+        String name = sc.nextLine();
+
+        System.out.println("Enter password");
+        String pass = sc.nextLine();
+       
+        if (name.equals("admin") && pass.equals("1234")){
+            System.out.println("succesfilly login");
+
+           System.out.println("Enter role");
+           String role = sc.nextLine();
+
+           if (role.equals("manager")){
+            System.out.println("you're manager");
+
+              System.out.println("Enter age");
+              Integer age = sc.nextInt();
+            if (age >= 18){
+                System.out.println("Succesfully");
+            } else {
+                System.out.println("too young for manager");
+            }
+
+           } else {
+            System.out.println("only manager can acccess");
+           }
+   
+
+        } else {
+            System.out.println("invalid");
+        }
+
+    }
+}
+
