@@ -1,0 +1,41 @@
+14. scanner/hard
+
+
+import java.util.Scanner;
+
+public class App {
+    public static void main(String[] args) throws Exception {
+        Scanner sc = new Scanner(System.in);
+
+    
+        System.out.println("Enter username");
+        String username = sc.nextLine();
+
+        System.out.println("Enter password");
+        String password = sc.nextLine();
+
+       
+
+
+        if (username.equals("admin") && password.equals("1234")){
+            System.out.println("succesfully log in");
+
+             System.out.println("Enter age");
+        Integer age = sc.nextInt();
+
+        if (age >= 18) {
+            System.out.println("access: successfuly log in");
+        } else {
+            System.out.println("too young");
+        }
+
+
+        } else {
+            System.out.println("invalid ");
+        }
+
+           
+       
+
+    }
+}
