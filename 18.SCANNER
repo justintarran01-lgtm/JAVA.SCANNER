@@ -1,0 +1,93 @@
+18. SCANNER
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String [] arg) {
+        
+
+        Scanner choice = new Scanner(System.in);
+       
+        char select = 'Y';
+        Integer price = 0;
+        Integer subtotal = 0;
+        Double discount = 0.0;
+        
+        
+        while (select == 'Y' || select== 'y'){
+
+         
+        System.out.println("------MENU LIST------");
+        System.out.println("\n1. Burger 80php");
+        System.out.println("2. Fries 50php");
+        System.out.println("3. Sandwich 70php");
+        System.out.println("4. Soft Drink 30php");
+        System.out.println("5. Coffe 40php");
+
+
+        System.out.print("choose your order: ");
+        Integer order = choice.nextInt();
+
+        System.out.print("Enter the quantity: ");
+        Integer quantity = choice.nextInt();
+             
+        
+        
+
+        if (order == 1) {
+           price = 80;
+        } else if (order == 2) {
+            price = 50;
+        } else if (order == 3) {
+            price = 70;
+
+        } else if (order == 4) {
+            price = 30;
+        } else if (order == 5) {
+            price = 40;
+        } else {
+             System.out.println("none of the menu");
+          
+        }
+        
+         subtotal += price * quantity;
+
+           System.out.println("total item:" + subtotal);
+
+           System.out.print("Do you want to order another item?: ");
+           select = choice.next().charAt(0);
+
+        }
+
+        System.out.println("final total: " + subtotal);
+
+        if (subtotal >= 500) {
+            discount = subtotal * 0.10;
+
+            System.out.println("discounted:" + discount);
+        } else if (subtotal >= 300) {
+            discount = subtotal * 0.05;
+
+            System.out.println("discounted:" + discount);
+        } else {
+            System.out.println("no discount");
+
+        }
+
+        System.out.println("total amount: " + (subtotal - discount));
+
+        
+
+        System.out.println("Enter payment:");
+        Double payment = choice.nextDouble();
+
+        Double change = payment - (subtotal - discount);
+
+        System.out.println("change " + change);
+         
+        System.out.println("---THANKYOU YOU FOR ORDERING!!--");
+
+      
+    }
+}
